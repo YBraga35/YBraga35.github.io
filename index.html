@@ -121,6 +121,18 @@
         .video:hover::before {
             opacity: 1;
         }
+        .video a {
+            display: block;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        .video a:hover {
+            color: #0056b3;
+        }
         .video-link {
             text-align: center;
             margin-top: 10px;
@@ -159,6 +171,12 @@
             }
             .video::before {
                 background-color: rgba(255, 255, 255, 0.2);
+            }
+            .video a {
+                color: #bb86fc;
+            }
+            .video a:hover {
+                color: #3700b3;
             }
             .video-link a {
                 color: #bb86fc;
@@ -206,22 +224,19 @@
         </section>
         <section class="videos">
             <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px;">Sessões Gravadas</h2>
-            <div class="videos">
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/flJn97CsauA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="video-link"><a href="/selvagem-apios">Selvagem Apios</a></p>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/O_4BG6QMcmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="video-link"><a href="/coroa-de-escamas">Coroa de Escamas</a></p>
-                </div>
-                <div class="video">
-                    <iframe src="https://youtube.com/embed/sYPXFCGmz8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="video-link"><a href="/lampioes-da-luz">Lampiões da Luz</a></p>
-                </div>
-                <!-- Adicione mais vídeos conforme necessário -->
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/flJn97CsauA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="/coroa-de-escamas">Coroa de Escamas</a>
             </div>
-        </section>        
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/O_4BG6QMcmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="/selvagem-apios">Selvagem Apios</a>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/sYPXFCGmz8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="/lampioes-da-luz">Lampiões da Luz</a>
+            </div>
+        </section>
         <section class="social-links">
             <h2>Redes Sociais</h2>
             <div style="text-align: center;">
