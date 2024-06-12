@@ -121,57 +121,73 @@
         .video:hover::before {
             opacity: 1;
         }
-
-        /* Responsivo de Dia/Noite */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
-    .container {
-        background-color: #1e1e1e;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    h1, h2 {
-        color: #bb86fc;
-    }
-    p {
-        background-color: #333;
-        color: #f0f0f0;
-    }
-    .social-links a {
-        color: #bb86fc;
-    }
-    .social-links a:hover {
-        color: #3700b3;
-    }
-
-    /* Responsivo de Dia/Noite */
-    .pc-rpg {
-        background-color: #1e1e1e;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 30px;
-        color: #e0e0e0;
-    }
-
-    .pc-rpg h2 {
-        color: #bb86fc;
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    .pc-rpg-content {
-        line-height: 1.6;
-        color: #e0e0e0; /* Adicionei essa linha */
-    }
-
-    .pc-rpg-content p {
-        margin-bottom: 10px;
-    }
-}
-
+        .video-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .video-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .video-link a:hover {
+            color: #0056b3;
+        }
+    
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+            .container {
+                background-color: #1e1e1e;
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            }
+            h1, h2 {
+                color: #bb86fc;
+            }
+            p {
+                background-color: #333;
+                color: #f0f0f0;
+            }
+            .social-links a {
+                color: #bb86fc;
+            }
+            .social-links a:hover {
+                color: #3700b3;
+            }
+            .video::before {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .video-link a {
+                color: #bb86fc;
+            }
+            .video-link a:hover {
+                color: #3700b3;
+            }
+            .pc-rpg {
+                background-color: #1e1e1e;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 30px;
+                color: #e0e0e0;
+            }
+            .pc-rpg h2 {
+                color: #bb86fc;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .pc-rpg-content {
+                line-height: 1.6;
+                color: #e0e0e0;
+            }
+            .pc-rpg-content p {
+                margin-bottom: 10px;
+            }
+        }
     </style>
+    
 </head>
 <body>
     <div class="container">
@@ -187,13 +203,19 @@
             <div class="videos">
                 <div class="video">
                     <iframe src="https://www.youtube.com/embed/flJn97CsauA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="video-link"><a href="/selvagem-apios">Selvagem Apios</a></p>
                 </div>
                 <div class="video">
                     <iframe src="https://www.youtube.com/embed/O_4BG6QMcmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="video-link"><a href="/coroa-de-escamas">Coroa de Escamas</a></p>
+                </div>
+                <div class="video">
+                    <iframe src="https://youtube.com/embed/sYPXFCGmz8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="video-link"><a href="/lampioes-da-luz">Lampiões da Luz</a></p>
                 </div>
                 <!-- Adicione mais vídeos conforme necessário -->
             </div>
-        </section>
+        </section>        
         <section class="social-links">
             <h2>Redes Sociais</h2>
             <div style="text-align: center;">
