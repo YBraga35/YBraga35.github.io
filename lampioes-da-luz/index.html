@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             color: #333;
             transition: background-color 0.3s, color 0.3s;
         }
+
         .container {
             width: 90%;
             max-width: 800px;
@@ -24,28 +26,34 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s, box-shadow 0.3s;
         }
-        header, section {
+
+        header,
+        section {
             margin-bottom: 40px;
         }
+
         header {
             text-align: center;
         }
+
         h1 {
             color: #007BFF;
             transition: color 0.3s;
             font-weight: 600;
-            letter-spacing: 1px;
+            letter-spacing: 1.6px;
             margin-bottom: 15px;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
         }
+
         h2 {
             color: #007BFF;
             transition: color 0.3s;
-            font-weight: 600;
+            font-weight: 500;
             letter-spacing: 1px;
             margin-bottom: 10px;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
+
         p {
             font-size: 1.1rem;
             font-weight: 500;
@@ -55,6 +63,7 @@
             background-color: #f0f0f0;
             transition: background-color 0.3s;
         }
+
         .video-section {
             display: flex;
             flex-wrap: wrap;
@@ -63,21 +72,25 @@
             align-items: flex-start;
             margin-bottom: 40px;
         }
+
         .video {
             width: calc(50% - 15px);
             position: relative;
             border-radius: 10px;
             overflow: hidden;
         }
+
         .video iframe {
             width: 100%;
             height: 200px;
             border: none;
             transition: transform 0.3s;
         }
+
         .video:hover iframe {
             transform: scale(1.05);
         }
+
         .video::before {
             content: '\f04b';
             font-family: "Font Awesome 5 Free";
@@ -96,12 +109,15 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
+
         .video:hover::before {
             opacity: 1;
         }
+
         .character-section {
             margin-bottom: 40px;
         }
+
         .character {
             border: 1px solid #007BFF;
             border-radius: 10px;
@@ -110,11 +126,13 @@
             background-color: #f0f0f0;
             transition: background-color 0.3s;
         }
+
         .character h3 {
             margin-top: 0;
             color: #007BFF;
             font-weight: 600;
         }
+
         .character img {
             max-width: 100%;
             border-radius: 10px;
@@ -126,23 +144,39 @@
                 background-color: #121212;
                 color: #e0e0e0;
             }
+
             .container {
                 background-color: #1e1e1e;
                 box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
             }
-            h1, h2 {
+
+            h1,
+            h2 {
                 color: #bb86fc;
             }
-            p, .character {
+
+            p,
+            .character {
                 background-color: #333;
                 color: #f0f0f0;
             }
+
             .character h3 {
                 color: #bb86fc;
             }
         }
+
+        .imagem-centralizada {
+            max-height: 300px;
+            /* Define a altura máxima desejada */
+            display: block;
+            /* Para garantir que o margin: 0 auto; funcione */
+            margin: 0 auto;
+            /* Centraliza a imagem horizontalmente */
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -150,48 +184,58 @@
             <h2>Os viajantes da luz em uma jornada contra a escuridão do mundo</h2>
         </header>
         <section>
-            <p>Em meio à Guerra Rubra muitos foram deixados para trás, mortos são jogados à pilhas em fogueiras e rios. Vocês porém são a luz que persiste iluminando até os mais perversos com sua luz, garantindo que a escuridão não prevaleça ante a bondade dos Deuses.</p>
+            <p>Em meio à Guerra Rubra muitos foram deixados para trás, mortos são jogados à pilhas em fogueiras e rios.
+                Vocês porém são a luz que persiste iluminando até os mais perversos com sua luz, garantindo que a
+                escuridão não prevaleça ante a bondade dos Deuses.</p>
         </section>
         <section class="video-section">
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/sYPXFCGmz8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/sYPXFCGmz8k" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/EXTS48e0Qu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/EXTS48e0Qu0" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </section>
         <section class="character-section">
             <div class="character">
-                <h3>Nome: Alíris</h3>
-                <p>Descritivo: Acólito da Deusa Lua, o cuidador e curandeiro da Luz Prateada.</p>
-                <img src="path/to/image1.jpg" alt="Alíris">
-                <p>Objetivos: Iluminar a vida e as Terras Sagradas levando a bondade de Morwyn a todos aqueles que precisam de cura em suas almas feridas.</p>
+                <h3>Alíris, O Prateado</h3>
+                <p>Acólito da Deusa Lua, o cuidador e curandeiro da Luz Prateada.</p>
+                <img src="aliris.webp" alt="Alíris" class="imagem-centralizada">
+                <p>Objetivos: Iluminar a vida e as Terras Sagradas levando a bondade de Morwyn a todos aqueles que
+                    precisam de cura em suas almas feridas.</p>
             </div>
             <div class="character">
-                <h3>Nome: [Nome do Personagem 2]</h3>
-                <p>Descritivo: [Descritivo do Personagem 2]</p>
-                <img src="path/to/image2.jpg" alt="[Nome do Personagem 2]">
-                <p>Objetivos: [Objetivos do Personagem 2]</p>
+                <h3>Aric, O Iluminado</h3>
+                <p>Um estudioso sedento por conhecimento, vindo de um passado misterioso com grandes descobertas em seu caminho. Ele busca honrar ao seu mentor e seguir iluminando o mundo, assim como a Grande Academia de Korala ensina.</p>
+                <img src="Aric.webp" alt="Aric" class="imagem-centralizada">
+                <p>Objetivos: Descobrir novos segredos do mundo e compartilhar seu conhecimento para o avanço da sociedade e o bem-estar de todos.</p>
             </div>
+            
             <div class="character">
-                <h3>Nome: [Nome do Personagem 3]</h3>
-                <p>Descritivo: [Descritivo do Personagem 3]</p>
-                <img src="path/to/image3.jpg" alt="[Nome do Personagem 3]">
-                <p>Objetivos: [Objetivos do Personagem 3]</p>
+                <h3>Arkan, O Exilado</h3>
+                <p>Um importante soldado e religioso do extinto Reino Dourado do Sol, agora exilado de suas antigas tropas após virar as costas para o corrupto Reino Rubro. Encontrou refúgio e aliados entre os Lampiões da Luz.</p>
+                <img src="Arkan.webp" alt="Arkan" class="imagem-centralizada">
+                <p>Objetivos: Buscar redenção e justiça, protegendo os indefesos e lutando contra a tirania que ele um dia serviu.</p>
             </div>
+            
             <div class="character">
-                <h3>Nome: [Nome do Personagem 4]</h3>
-                <p>Descritivo: [Descritivo do Personagem 4]</p>
-                <img src="path/to/image4.jpg" alt="[Nome do Personagem 4]">
-                <p>Objetivos: [Objetivos do Personagem 4]</p>
-            </div>
+                <h3>Ivernn, O Renascido</h3>
+                <p>Abençoado pela Grande Mãe Terra, Rontra, Ivernn enfrentou um passado marcado por crimes terríveis. Após ser absolvido, recebeu uma segunda chance para viver entre os vivos novamente.</p>
+                <img src="Ivernn.webp" alt="Ivernn" class="imagem-centralizada">
+                <p>Objetivos: Proteger a natureza e seus seguidores, buscando reconciliar seu passado sombrio com um presente dedicado ao serviço e à redenção.</p>
+            </div>            
             <div class="character">
-                <h3>Nome: [Nome do Personagem 5]</h3>
-                <p>Descritivo: [Descritivo do Personagem 5]</p>
-                <img src="path/to/image5.jpg" alt="[Nome do Personagem 5]">
-                <p>Objetivos: [Objetivos do Personagem 5]</p>
-            </div>
+                <h3>Vasha, O Lunar</h3>
+                <p>Antigamente um vampiro, uma criatura de trevas e sombras, encontrou nas bençãos da Deusa Lua uma alma para chamar de sua. Agora ele segue a doutrina lunar, espalhando a bondade de Morwyn para todos que cruzam seu caminho.</p>
+                <img src="Vasha.webp" alt="Vasha" class="imagem-centralizada">
+                <p>Objetivos: Um dia acabar com aqueles que compartilham seu sangue, especialmente seu pai, um dos vampiros da cidade de Hidela. Além disso, Vasha vive com curiosidade, descobrindo um novo mundo cheio de luz e esperança, algo que antes ele nunca teve.</p>
+            </div>            
         </section>
     </div>
 </body>
+
 </html>
