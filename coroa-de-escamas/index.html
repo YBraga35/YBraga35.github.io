@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampiões da Luz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        header,
+        section {
+            margin-bottom: 40px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+            transition: color 0.3s;
+            font-weight: 600;
+            letter-spacing: 1.6px;
+            margin-bottom: 15px;
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            color: #007BFF;
+            transition: color 0.3s;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.6;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .video {
+            width: calc(50% - 15px);
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .video:hover iframe {
+            transform: scale(1.05);
+        }
+
+        .video::before {
+            content: '\f04b';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .video:hover::before {
+            opacity: 1;
+        }
+
+        .character-section {
+            margin-bottom: 40px;
+        }
+
+        .character {
+            border: 1px solid #007BFF;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .character h3 {
+            margin-top: 0;
+            color: #007BFF;
+            font-weight: 600;
+        }
+
+        .character img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+
+            .container {
+                background-color: #1e1e1e;
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            }
+
+            h1,
+            h2 {
+                color: #bb86fc;
+            }
+
+            p,
+            .character {
+                background-color: #333;
+                color: #f0f0f0;
+            }
+
+            .character h3 {
+                color: #bb86fc;
+            }
+        }
+
+        .imagem-centralizada {
+            max-height: 300px;
+            /* Define a altura máxima desejada */
+            display: block;
+            /* Para garantir que o margin: 0 auto; funcione */
+            margin: 0 auto;
+            /* Centraliza a imagem horizontalmente */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Coroa de Escamas</h1>
+            <h2>As Terras de Tylea precisam de heróis e a Oráculo apresentou-os como os salvadores das terras</h2>
+        </header>
+        <section>
+            <p>O povo de Tylea permanesceu em paz com os Cinco Deuses estando entre eles, porém séculos de paz
+                permitiram que até os cruéis titãs restabelecerem sua força e impor sua vontade sobre o povo das terras.
+                Agora os heróis devem seguir pelas terras, encontrando seu caminho em meio a Grandes Trabalhos e
+                Desafios até se provarem os verdadeiros salvadores das terras
+            </p>
+        </section>
+        <section class="video-section">
+            <div class="video">
+                <iframe src="https://youtube.com/embed/7Unrga6So9k" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://youtube.com/embed/O_4BG6QMcmE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="character-section">
+            <div class="character">
+                <h3>Darius, o Condenado</h3>
+                <p>Vindo de uma família notável, com sangue divino e dos próprios Lordes Dragões. Porém o azar sempre o
+                    perseguiu, seus pais morrendo muito cedo, todos o repudiam por seu passado</p>
+                <img src="darius.webp" alt="Darius" class="imagem-centralizada">
+                <p>Agora ao menos a Oráculo o chamou, o que significa que seu destino possa ter mudado, devendo desafiar
+                    seu derradeiro fim
+                </p>
+            </div>
+            <div class="character">
+                <h3>Kha'el, o Semideus</h3>
+                <p>Um filho do deus da guerra Pythor, com temperamento lendário e uma carreira grandiosa entre as forças
+                    de Mytros, agora a Oráculo previu um grande destino, na qual se uniria ao seu pai em divindade.
+                </p>
+                <img src="khael.webp" alt="Kha'el" class="imagem-centralizada">
+                <p>Agora porém, seu destino jaz em resgatar sua mãe e matar o maior inimigo de seu pai, um poderoso
+                    Dragão conhecido como Hexia</p>
+            </div>
+
+            <div class="character">
+                <h3>Hermes, o Curioso</h3>
+                <p>Vindo de uma família importante, sempre rodeados por conhecimento e livros do passado glorioso dos
+                    deuses. Porém o passado parece pouco para vislumbrar, então juntamente com os escolhidos da Oráculo,
+                    Tylea precisa de alguém que vislumbre o presente para formar o futuro das terras
+                </p>
+                <img src="hermes.webp" alt="Hermes" class="imagem-centralizada">
+                <p>Pinturas épicas das batalhas e vitórias dos heróis desbravadores são o seu objetivo, além de ficar na
+                    história como o escrivão do futuro</p>
+            </div>
+
+            <div class="character">
+                <h3>Sirius, o Desaparecido</h3>
+                <p>Um dos originais Lordes Dragões, sangue divino correndo em suas veias, porém seus dias de glória já
+                    se foram e o conforto da Oráculo foi suficiente para mantê-lo inerte por séculos</p>
+                <img src="sirius.webp" alt="Sirius" class="imagem-centralizada">
+                <p>Precisa ardentemente atender ao seu chamado cmoo Lorde Dragão e encontrar seus possíveis descendentes
+                    nas terras de Tylea</p>
+            </div>
+            <div class="character">
+                <h3>Theo, o Caçador de Dragões</h3>
+                <p>Com o pai morto e sua loja destruída por um cruel dragão, agora seu destino faz nas mãos das Moiras,
+                    e nas suas próprias, agora seu passado trágico é uma base firme para um futuro glorioso</p>
+                <img src="theo.webp" alt="Theo" class="imagem-centralizada">
+                <p>O sangue do dragão que matou seu próprio sangue ainda correrá por suas mãos, marcando sua história
+                    com a lendária vitória e reparação</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
